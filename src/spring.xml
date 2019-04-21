@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+	
+	<bean id="laptop" class="com.suraj.spring.beans.Laptop">
+		<property name="charger" ref="charger"></property>
+	</bean>
+	
+	<bean id="charger" class="com.suraj.spring.beans.Charger"></bean>
+	
+	<alias name="laptop" alias="HP"/>
+	<alias name="laptop" alias="HCL"/>
+	<alias name="laptop" alias="Lennovo"/>
+</beans>
